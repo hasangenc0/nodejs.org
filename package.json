@@ -20,6 +20,7 @@
     "test:lint:md": "markdownlint \"**/*.md\" -i \"**/node_modules/**\"",
     "test:lint:stylint": "stylint layouts/css",
     "test:lint": "npm-run-all --parallel test:lint:*",
+    "test:lockfile": "lockfile-lint --type npm --path package-lock.json --allowed-hosts npm",
     "test:html": "node scripts/vnu-jar.js",
     "test:unit": "tape tests/**/*.test.js | faucet"
   },
@@ -70,6 +71,7 @@
     "delay-cli": "^1.1.0",
     "faucet": "0.0.1",
     "linkinator": "^1.5.0",
+    "lockfile-lint": "^2.1.2",
     "markdownlint-cli": "^0.18.0",
     "nock": "^11.4.0",
     "pre-commit": "^1.2.2",
